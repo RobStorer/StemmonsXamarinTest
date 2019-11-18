@@ -7,7 +7,7 @@ trigger:
 - master
 
 pool:
-  vmImage: 'macos-latest'
+  vmImage: 'droid-latest'
 
 variables:
   buildConfiguration: 'Release'
@@ -19,6 +19,12 @@ steps:
 - task: NuGetCommand@2
   inputs:
     restoreSolution: '**/*.sln'
+
+- task: AndroidSigning@3
+  inputs:
+    apkFiles: '**/*.apk'
+    apksign: false
+    zipalign: false
 
 - task: XamarinAndroid@1
   inputs:
