@@ -20,14 +20,14 @@ steps:
   inputs:
     restoreSolution: '**/*.sln'
 
-- task: AndroidSigning@3
-  inputs:
-    apkFiles: '**/*.apk'
-    apksign: false
-    zipalign: false
-
 - task: XamarinAndroid@1
   inputs:
     projectFile: '**/*droid*.csproj'
     outputDirectory: '$(outputDirectory)'
     configuration: '$(buildConfiguration)'
+
+- task: AndroidSigning@3
+  inputs:
+    apkFiles: '**/*.apk'
+    apksign: false
+    zipalign: false
