@@ -7,7 +7,7 @@ trigger:
 - master
 
 pool:
-  vmImage: 'macOS-latest'
+  vmImage: 'VS2017-Win2016'
 
 variables:
   buildConfiguration: 'Release'
