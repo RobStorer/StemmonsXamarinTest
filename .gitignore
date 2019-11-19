@@ -1,6 +1,6 @@
-MyPrismApp/MyPrismApp.Android/bin/
-MyPrismApp/MyPrismApp.Android/obj/
-MyPrismApp/MyPrismApp/bin/
-MyPrismApp/MyPrismApp/obj/
-UITest1/bin/
-UITest1/obj/
+PrismTest2/PrismTest2.Android/obj/
+PrismTest2/PrismTest2.Android/bin/
+.vs/PrismTest2/v15/Server/
+PrismTest2/PrismTest2.iOS/obj/
+PrismTest2/PrismTest2/bin/
+PrismTest2/PrismTest2/obj/
